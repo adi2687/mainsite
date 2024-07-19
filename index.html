@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+body{
+    margin:0px;
+    padding:0px;
+}
+header{
+    border-top:none;
+    border-bottom:2px solid grey
+}
+.profile{
+    min-width:14%;
+    height:50px;
+    padding:9px
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logomain.png" alt="logo">
+        </div>
+        <div class="input">
+            <input type="text" placeholder="Search friendify .... ">
+        </div>
+        <div class="icons">
+            <div><i class="fa-solid fa-house fa-lg"></i></div>
+            <div><i class="fa-solid fa-users fa-lg"></i></div>
+            <div><i class="fa-solid fa-globe fa-lg"></i></div>
+            <div><i class="fa-solid fa-bell fa-lg"></i></div>
+            <div><i class="fa-solid fa-robot fa-lg"></i></div>
+        </div>
+        <div class="message"><i class="fa-solid fa-message fa-lg white-icon"></i></div>
+        <div class="profile">
+            <img src="me.jpg" alt="profile">
+            <span>Aditya Kurani</span>
+        </div>
+    </header>
+
+    <script src="https://kit.fontawesome.com/6e98228717.js" crossorigin="anonymous"></script>
+    <script>
+        const profile=document.querySelector("header .profile")
+        const username=profile.querySelector("span")
+        const message=document.querySelector("header .message")
+        setInterval(()=>{
+            if(window.innerWidth<=700){
+                profile.style.width="10px"
+                profile.style.backgroundColor="white";
+                profile.style.marginLeft="5px"
+                message.style.marginLeft="13px"
+                username.style.display="none"
+            }
+        },1000)
+        const logo=document.querySelector(".logo")
+        logo.addEventListener("click",()=>{
+            window.location.href=""
+        })
+        message.addEventListener("click",()=>{
+            window.location.href="messages"
+        })
+    </script>
+</body>
+
+</html>
