@@ -1,0 +1,90 @@
+header{
+    /* border:6px solid blue; */
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    text-align: center;
+    align-items: center;
+    gap:6%;
+}
+
+.logo{
+    margin-left:7%;
+    cursor: pointer;
+}
+header .logo img{
+    width: 60px;
+    height:50px
+}
+.icons{
+    display: flex;
+
+    flex-direction: row;
+    gap:12%;
+}
+.icons div{
+    padding:15px;
+    border-radius: 12px;
+    cursor: pointer;
+
+}
+.icons div:hover{
+    background-color: rgb(212, 203, 203);
+}
+header input{
+    padding:10px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size:100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border:3px solid grey
+}
+header .message{
+margin-left:10%;
+background-color: rgb(212, 203, 203);
+padding:20px;
+border-radius: 12px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.white-icon{
+    color:grey;
+    cursor: pointer;
+}
+.profile img{
+    width:60px;
+    height:60px;
+    border-radius: 48%;
+}
+.profile{
+    display: flex;
+    justify-content: center;
+    background-color: #9e9898;
+    border-radius: 23px;
+    text-align: center;
+    align-items: center;
+    padding:4px;
+    gap:10px;
+    color:white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@media screen and (max-width:600px){
+    header .icons{
+        display: none;
+    }
+    header input{
+        padding:4px;
+    }
+    header .message{
+        margin-left:3%;
+        width:0px
+    }
+    .logo{
+        margin-left:0px
+    }
+    header{
+        gap:0%
+    }
+}
