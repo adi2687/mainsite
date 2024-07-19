@@ -21,6 +21,9 @@ header{
     height:50px;
     padding:9px
 }
+header input{
+    margin-left:3%;
+}
     </style>
 </head>
 
@@ -51,15 +54,16 @@ header{
         const profile=document.querySelector("header .profile")
         const username=profile.querySelector("span")
         const message=document.querySelector("header .message")
-        setInterval(()=>{
+        
             if(window.innerWidth<=700){
                 profile.style.width="10px"
                 profile.style.backgroundColor="white";
-                profile.style.marginLeft="5px"
-                message.style.marginLeft="13px"
+                profile.style.marginLeft="0px"
+                message.style.marginLeft="4%"
                 username.style.display="none"
+                profile.style.display="none"
             }
-        },1000)
+        
         const logo=document.querySelector(".logo")
         logo.addEventListener("click",()=>{
             window.location.href=""
