@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylemain.css">
+    <link rel="icon" href="logomain.png" >
     <style>
 body{
     margin:0px;
@@ -50,28 +51,7 @@ header input{
     </header>
 
     <script src="https://kit.fontawesome.com/6e98228717.js" crossorigin="anonymous"></script>
-    <script>
-        const profile=document.querySelector("header .profile")
-        const username=profile.querySelector("span")
-        const message=document.querySelector("header .message")
-        
-            if(window.innerWidth<=700){
-                profile.style.width="10px"
-                profile.style.backgroundColor="white";
-                profile.style.marginLeft="0px"
-                message.style.marginLeft="4%"
-                username.style.display="none"
-                profile.style.display="none"
-            }
-        
-        const logo=document.querySelector(".logo")
-        logo.addEventListener("click",()=>{
-            window.location.href=""
-        })
-        message.addEventListener("click",()=>{
-            window.location.href="messages"
-        })
-    </script>
+    
 </body>
 
 </html>
